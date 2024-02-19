@@ -83,8 +83,8 @@ namespace MakingTimeTable
             var body = myDocument?.MainDocumentPart?.Document.Body;
             return body?.Descendants<Run>()!;
         }
+        //Comment
 
-        //Another Comment
         private OpenXmlElement[] CloneElements(Body body, params Type[] types)
         {
             IEnumerable<OpenXmlElement> parentElements = body.ChildElements;
